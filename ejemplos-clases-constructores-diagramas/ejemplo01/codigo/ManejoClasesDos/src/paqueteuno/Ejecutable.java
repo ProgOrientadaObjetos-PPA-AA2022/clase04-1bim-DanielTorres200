@@ -10,7 +10,9 @@ import paquetedos.Computadora;
 public class Ejecutable {
     public static void main(String[] args) {
         // Se crea un objeto
-        Computadora computadoraPersonal = new Computadora();
+        Computadora computadoraPersonall = new Computadora(16);
+        Computadora computadoraPersonal2 = new Computadora("Intel");
+        Computadora computadoraPersonal3 = new Computadora("AMD", 8);
         
         // Se asigna valores particulares al objeto
         // a través de los métodos establecer
@@ -30,5 +32,16 @@ public class Ejecutable {
                 computadoraPersonal.obtenerTipoProcesador(),
                 computadoraPersonal.obtenerMemoria());
         
+         System.out.printf("Computadora\n"
+                + "Procesador: %s\n"
+                + "Memoria: %.2f GB\n", 
+                computadoraPersona2.obtenerTipoProcesador(),
+                computadoraPersona2.obtenerMemoria());
+        
+          System.out.printf("Computadora\n"
+                + "Procesador: %s\n"
+                + "Memoria: %.2f GB\n", 
+                computadoraPersona3.obtenerTipoProcesador(),
+                computadoraPersona3.obtenerMemoria());
     }
 }
